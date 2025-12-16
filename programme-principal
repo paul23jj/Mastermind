@@ -1,1 +1,10 @@
-Declaration en global len
+Declaration en global le type typFormule : 
+    vecteur : tableau [1..5] de caractere
+
+Debut
+
+varOriginal, varCopie, varEssai :  typFormule
+BP, MP : réel
+nbEssai : réel
+i : réel
+x, y : réel
