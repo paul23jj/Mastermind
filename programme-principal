@@ -9,9 +9,9 @@ Debut
     i : réel
     x, y : réel
 
-    //Formule originale    //Donc, pour la saisie de la formule d'origine, commencez par mettre un commentaire
-    Pour i de 1 à 5 faire //puis faites une boucle  pour remplir le vecteur varOriginal en utilisant la fonction saisiCouleur
-        varOriginale[i] <-- saisiCouleur(x, y) //En ce qui concerne les coordonnées x et y, envoyez vos 2 variables en paramètre
+    //Formule originale
+    Pour i de 1 à 5 faire 
+        varOriginale[i] <-- saisiCouleur(x, y) 
     finPour
 
     nbEssai <-- 0   
@@ -28,10 +28,18 @@ Debut
         fonction calculBP(vec1, vec2 : typFormule): entier
             BP <-- calculBP(varEssai, varCopie)
         retourner BP
-        //Calcul dees MP
+        //Calcul des MP
         fonction caculMP(vec1, vec2 : typFormule): entier
             MP <-- caculMP(varEssai, varCopie)
         retourner MP
         Procedure afficheValeur(x, y : entier ; val : entier)
     Jusqu'à FormuleTrouvée
-    
+
+    //affichage du message final en fonction du nombre d'essais
+    Si nbEssai <= 5 alors 
+        afficher "BRAVO !"
+    Si Sinon nbEssai > 5 && <= 10 alors
+        afficher "Correct"
+    Sinon afficher "Décevant..."
+    finSi
+Fin
