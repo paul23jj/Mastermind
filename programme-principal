@@ -42,6 +42,7 @@ Debut
     Jusqu'à FormuleTrouvée
 
     //affichage du message final en fonction du nombre d'essais
+    Afficher "La formule a été trouvée en ", nbEssai,
     Si nbEssai <= 5 alors 
         afficher "BRAVO !"
     Si Sinon nbEssai > 5 && <= 10 alors
