@@ -18,21 +18,27 @@ Debut
 
     //La boucle principale sert à être répéter jusqu'à ce que les 5 couleurs soit bien placées (boucle essais)
     Répéter
+
         nbEssai <-- nbEssai + 1
+
         //même principe que la formule og mais avec la saisi de la formule essai en plus
         Pour i de 1 à 5 faire
             varEssai[i] <-- saisiCouleur(x, y)
             varCopie[i] <-- varOriginal[i]
         finPour
+
         //Calcul des BP
         fonction calculBP(vec1, vec2 : typFormule): entier
             BP <-- calculBP(varEssai, varCopie)
         retourner BP
+
         //Calcul des MP
         fonction caculMP(vec1, vec2 : typFormule): entier
             MP <-- caculMP(varEssai, varCopie)
         retourner MP
+
         Procedure afficheValeur(x, y : entier ; val : entier)
+        
     Jusqu'à FormuleTrouvée
 
     //affichage du message final en fonction du nombre d'essais
