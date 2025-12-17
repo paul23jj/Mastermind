@@ -24,8 +24,14 @@ Debut
             varEssai[i] <-- saisiCouleur(x, y)
             varCopie[i] <-- varOriginal[i]
         finPour
-        //Calcul des BP, MP
+        //Calcul des BP
         fonction calculBP(vec1, vec2 : typFormule): entier
             BP <-- calculBP(varEssai, varCopie)
         retourner BP
+        //Calcul dees MP
+        fonction caculMP(vec1, vec2 : typFormule): entier
+            MP <-- caculMP(varEssai, varCopie)
+        retourner MP
+        Procedure afficheValeur(x, y : entier ; val : entier)
     Jusqu'à FormuleTrouvée
+    
