@@ -1,0 +1,29 @@
+Programme GestionAffichage
+
+typFormule : tableau [1..5] de caractere
+FormuleEssai : tableau [1..5] de caractere //formule d'essai du joueur 2
+
+Debut
+//Affichage principal
+    Afficher "1er joueur : "
+    pour i de 1 à 5 faire 
+        saisir formule[i]
+        Afficher i
+    finPour
+    Afficher Y*" "
+    Afficher "2ème joueur : "
+    Afficher X*" "
+    Afficher "Bien", X*x, "placé"
+    Afficher Y*" "
+    Afficher X*" ", "Mal placé"
+    Afficher Y*" "
+    //Boucle pour les essais et les BP, MP
+    Tant que typFormule ≠ FormuleEssai faire
+        Afficher "Essai", nbEssai, X*" " 
+        Saisir FormuleEssai
+        Afficher X*" "
+        Afficher CalculBP()
+        Afficher X*" "
+        Afficher CalculMP()
+    finTantQue
+Fin

@@ -1,5 +1,5 @@
 Declaration en global le type typFormule : 
-    vecteur : tableau [1..5] de caractere
+    typFormule : tableau [1..5] de caractere
 
 Debut
 
