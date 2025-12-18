@@ -1,1 +1,58 @@
 Faites la partie 2 du tp ici 
+
+
+
+
+
+
+
+
+
+
+
+
+
+programe mastermind C
+ 
+vec1, vec2, typeFormule = entier
+variable : nbrmBP, I = entier
+Début
+    nbrmBP, I = entier
+
+        Pour I allant de 0 à taille du vecteur-1 faire
+
+        Si vec1[I] = vec2[I] Alors
+
+            nbrmBP <- nmbrBP + 1
+            
+            vec1[I] <- "X"
+            vec2[I] <- "Y"
+
+        Fin Si
+    Retourner nmbrBP
+Fin
+
+programe mastermind D
+
+vec1, vec2, typeformule = entier
+variable : nbrmBP, I, J = entier
+debut
+
+    nbrmBP <-0
+
+    Pour i allant de 0 a taille du vecteur -1 faire
+
+        si vec2[I] different de y faire 
+
+            Pour J allant de 0 a taille du vecteur -1 faire
+
+                si vec2[I] = vec1[J] Alors
+                    nbrmBP <- nbrmBP +1
+                    vec1[J] <- "X"
+                    vec2[I] <- "Y"
+                Fin Si
+            Fin Pour
+        Fin Si
+    Fin Pour
+    Retourner nbrmBP
+Fin
