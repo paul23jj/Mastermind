@@ -1,10 +1,49 @@
 Faites la partie 2 du tp ici 
 
+programme mastermind A
 
+//boucle permettant de se déplacer avec des espace en Y jusqu'a ce que il trouve la valeur, puis il affiche la valeur x 
+procédure afficheValeur (x, y : entier ; val : entier)
+var i = entier
+Début 
+    pour i de 1 a y 
+        afficher " "
+    fin pour
 
+    afficher x * " " + val
+Fin
 
+programme mastermind B
 
+//Verifie si le caractère rentré est de la bonne couleur
 
+fonction carcValide (c : carac) : booleen
+
+varible i : entier
+varibale Couleur : tab[0..6]
+variable Coul : [7]carac ("R", "G", "B", "V", "J", "N")
+
+Debut 
+    pour i allant de 0 a 6 
+        si C <> Coul[i] alors 
+    retourner false
+        sinon si C = Coul[i] alors 
+    retourner true
+Fin
+
+//permet au joueur de saisir la couleur
+
+fonction saisieCouleur (x, y : entier) : carac
+
+variable C : carac
+
+Debut 
+    tantQue carcValide(C) = false
+        saisir C
+    finTantQue
+
+    retourner C
+Fin    
 
 
 
